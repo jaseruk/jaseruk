@@ -48,7 +48,7 @@
             "type": "Microsoft.Network/networkSecurityGroups",
             "apiVersion": "2019-04-01",
             "name": "[parameters('networkSecurityGroups_hr_records_nsg_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "properties": {
                 "provisioningState": "Succeeded",
                 "resourceGuid": "b3239779-e967-4d87-88f1-65b4e6bfa6ba",
@@ -239,7 +239,7 @@
             "type": "Microsoft.Network/networkSecurityGroups",
             "apiVersion": "2019-04-01",
             "name": "[parameters('networkSecurityGroups_patient_records_nsg_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "properties": {
                 "provisioningState": "Succeeded",
                 "resourceGuid": "b0223784-0386-4ac2-a236-fbc491eb9d53",
@@ -430,7 +430,7 @@
             "type": "Microsoft.Network/publicIPAddresses",
             "apiVersion": "2019-04-01",
             "name": "[parameters('publicIPAddresses_hr_records_ip_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "sku": {
                 "name": "Basic",
                 "tier": "Regional"
@@ -449,7 +449,7 @@
             "type": "Microsoft.Network/publicIPAddresses",
             "apiVersion": "2019-04-01",
             "name": "[parameters('publicIPAddresses_patient_records_ip_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "sku": {
                 "name": "Basic",
                 "tier": "Regional"
@@ -468,7 +468,7 @@
             "type": "Microsoft.Network/virtualNetworks",
             "apiVersion": "2019-04-01",
             "name": "[parameters('virtualNetworks_asr_vnet_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "properties": {
                 "provisioningState": "Succeeded",
                 "resourceGuid": "9bbe40d0-a95d-4acf-a004-38e4e80f02a6",
@@ -497,7 +497,7 @@
             "type": "Microsoft.Storage/storageAccounts",
             "apiVersion": "2019-04-01",
             "name": "[parameters('storageAccounts_asrcache_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "sku": {
                 "name": "Standard_LRS",
                 "tier": "Standard"
@@ -528,7 +528,7 @@
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2019-03-01",
             "name": "[parameters('virtualMachines_hr_records_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_hr_records71_name'))]"
             ],
@@ -579,7 +579,7 @@
             "type": "Microsoft.Compute/virtualMachines",
             "apiVersion": "2019-03-01",
             "name": "[parameters('virtualMachines_patient_records_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/networkInterfaces', parameters('networkInterfaces_patient_records71_name'))]"
             ],
@@ -797,7 +797,7 @@
             "type": "Microsoft.Network/networkInterfaces",
             "apiVersion": "2019-04-01",
             "name": "[parameters('networkInterfaces_hr_records71_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_hr_records_ip_name'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_asr_vnet_name'), 'default')]",
@@ -844,7 +844,7 @@
             "type": "Microsoft.Network/networkInterfaces",
             "apiVersion": "2019-04-01",
             "name": "[parameters('networkInterfaces_patient_records71_name')]",
-            "location": "uk-west",
+            "location": "ukwest",
             "dependsOn": [
                 "[resourceId('Microsoft.Network/publicIPAddresses', parameters('publicIPAddresses_patient_records_ip_name'))]",
                 "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_asr_vnet_name'), 'default')]",
