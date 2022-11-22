@@ -1,8 +1,6 @@
 
     {
       "displayName": "Block Copy/Paste SharePoint MCAS",
-      "createdDateTime": "2022-11-15T15:10:56.7928805Z",
-      "modifiedDateTime": null,
       "state": "enabled",
       "grantControls": null,
       "conditions": {
