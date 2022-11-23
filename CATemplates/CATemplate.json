@@ -1,54 +1,54 @@
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies",
-    "value": [
-        {
-
-            "displayName": "Block Legacy Authentication",
-
-
-            "state": "enabled",
-            "sessionControls": null,
-            "conditions": {
-                "userRiskLevels": [],
-                "signInRiskLevels": [],
-                "clientAppTypes": [
-                    "exchangeActiveSync",
-                    "other"
-                ],
-                "servicePrincipalRiskLevels": [],
-                "platforms": null,
-                "locations": null,
-                "devices": null,
-                "clientApplications": null,
-                "applications": {
-                    "includeApplications": [
-                        "All"
-                    ],
-                    "excludeApplications": [],
-                    "includeUserActions": [],
-                    "includeAuthenticationContextClassReferences": []
-                },
-                "users": {
-                    "includeUsers": [
-                        "All"
-                    ],
-                    "excludeUsers": [
-                        "6e0ff3a5-a8cf-4b9a-a814-001252aecfd1"
-                    ],
-                    "includeGroups": [],
-                    "excludeGroups": [],
-                    "includeRoles": [],
-                    "excludeRoles": []
-                }
-            },
-            "grantControls": {
-                "operator": "OR",
-                "builtInControls": [
-                    "block"
-                ],
-                "customAuthenticationFactors": [],
-                "termsOfUse": []
-            }
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies",
+  "value": [
+    {
+      "id": "9c6c58ad-f210-473e-ab6d-44a831352d5c",
+      "displayName": "Block Legacy Authentication",
+      "createdDateTime": "2022-11-23T08:47:00.845692Z",
+      "modifiedDateTime": null,
+      "state": "enabled",
+      "sessionControls": null,
+      "conditions": {
+        "userRiskLevels": [],
+        "signInRiskLevels": [],
+        "clientAppTypes": [
+          "exchangeActiveSync",
+          "other"
+        ],
+        "servicePrincipalRiskLevels": [],
+        "platforms": null,
+        "locations": null,
+        "devices": null,
+        "clientApplications": null,
+        "applications": {
+          "includeApplications": [
+            "All"
+          ],
+          "excludeApplications": [],
+          "includeUserActions": [],
+          "includeAuthenticationContextClassReferences": []
+        },
+        "users": {
+          "includeUsers": [
+            "All"
+          ],
+          "excludeUsers": [
+            "6e0ff3a5-a8cf-4b9a-a814-001252aecfd1"
+          ],
+          "includeGroups": [],
+          "excludeGroups": [],
+          "includeRoles": [],
+          "excludeRoles": []
         }
-    ]
+      },
+      "grantControls": {
+        "operator": "OR",
+        "builtInControls": [
+          "block"
+        ],
+        "customAuthenticationFactors": [],
+        "termsOfUse": []
+      }
+    }
+  ]
 }
