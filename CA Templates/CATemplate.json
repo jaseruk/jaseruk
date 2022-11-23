@@ -1,7 +1,11 @@
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies",
+    "value": [
         {
+
             "displayName": "Block Legacy Authentication",
-            "createdDateTime": "2022-11-23T08:47:00.845692Z",
-            "modifiedDateTime": null,
+
+
             "state": "enabled",
             "sessionControls": null,
             "conditions": {
@@ -46,3 +50,5 @@
                 "termsOfUse": []
             }
         }
+    ]
+}
