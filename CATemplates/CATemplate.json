@@ -1,49 +1,102 @@
-    {
-      "id": "9c6c58ad-f210-473e-ab6d-44a831352d5c",
-      "displayName": "Block Legacy Authentication",
-      "createdDateTime": "2022-11-23T08:47:00.845692Z",
-      "modifiedDateTime": null,
-      "state": "enabled",
-      "sessionControls": null,
-      "conditions": {
-        "userRiskLevels": [],
-        "signInRiskLevels": [],
-        "clientAppTypes": [
-          "exchangeActiveSync",
-          "other"
-        ],
-        "servicePrincipalRiskLevels": [],
-        "platforms": null,
-        "locations": null,
-        "devices": null,
-        "clientApplications": null,
-        "applications": {
-          "includeApplications": [
-            "All"
-          ],
-          "excludeApplications": [],
-          "includeUserActions": [],
-          "includeAuthenticationContextClassReferences": []
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies",
+    "value": [
+        {
+            "id": "9c6c58ad-f210-473e-ab6d-44a831352d5c",
+            "displayName": "Block Legacy Authentication",
+            "createdDateTime": "2022-11-23T08:47:00.845692Z",
+            "modifiedDateTime": "2022-11-24T16:48:56.2611695Z",
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [
+                    "high"
+                ],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "exchangeActiveSync",
+                    "other"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [
+                        "All"
+                    ],
+                    "excludeUsers": [
+                        "6e0ff3a5-a8cf-4b9a-a814-001252aecfd1"
+                    ],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [],
+                    "excludeRoles": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "block"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": []
+            }
         },
-        "users": {
-          "includeUsers": [
-            "All"
-          ],
-          "excludeUsers": [
-            "6e0ff3a5-a8cf-4b9a-a814-001252aecfd1"
-          ],
-          "includeGroups": [],
-          "excludeGroups": [],
-          "includeRoles": [],
-          "excludeRoles": []
+        {
+            "id": "6a325c67-8d03-4428-b29c-2f15249f9482",
+            "displayName": "Admins Require MFA",
+            "createdDateTime": "2022-11-24T17:06:58.836414Z",
+            "modifiedDateTime": null,
+            "state": "enabled",
+            "sessionControls": null,
+            "conditions": {
+                "userRiskLevels": [],
+                "signInRiskLevels": [],
+                "clientAppTypes": [
+                    "all"
+                ],
+                "servicePrincipalRiskLevels": [],
+                "platforms": null,
+                "locations": null,
+                "devices": null,
+                "clientApplications": null,
+                "applications": {
+                    "includeApplications": [
+                        "All"
+                    ],
+                    "excludeApplications": [],
+                    "includeUserActions": [],
+                    "includeAuthenticationContextClassReferences": []
+                },
+                "users": {
+                    "includeUsers": [],
+                    "excludeUsers": [],
+                    "includeGroups": [],
+                    "excludeGroups": [],
+                    "includeRoles": [
+                        "9b895d92-2cd3-44c7-9d02-a6ac2d5ea5c3"
+                    ],
+                    "excludeRoles": []
+                }
+            },
+            "grantControls": {
+                "operator": "OR",
+                "builtInControls": [
+                    "mfa"
+                ],
+                "customAuthenticationFactors": [],
+                "termsOfUse": []
+            }
         }
-      },
-      "grantControls": {
-        "operator": "OR",
-        "builtInControls": [
-          "block"
-        ],
-        "customAuthenticationFactors": [],
-        "termsOfUse": []
-      }
-    }
+    ]
+}
