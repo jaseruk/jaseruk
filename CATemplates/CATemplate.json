@@ -1,5 +1,4 @@
 {
-    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#identity/conditionalAccess/policies",
     "value": [
         {
             "id": "9c6c58ad-f210-473e-ab6d-44a831352d5c",
